@@ -1,0 +1,29 @@
+<%= form_for(@proy) do |f| %>
+  <% if @proy.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@proy.errors.count, "error") %> prohibited this proy from being saved:</h2>
+
+      <ul>
+      <% @proy.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre_proy %><br>
+    <%= f.text_field :nombre_proy %>
+  </div>
+  <div class="field">
+    <%= f.label :horas %><br>
+    <%= f.number_field :horas %>
+  </div>
+  <div class="field">
+    <%= f.label :Alumno_id %><br>
+    <%= f.text_field :Alumno_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

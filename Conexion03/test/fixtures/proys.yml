@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre_proy: MyString
+  horas: 1
+  Alumno_id: 
+
+two:
+  nombre_proy: MyString
+  horas: 1
+  Alumno_id: 
